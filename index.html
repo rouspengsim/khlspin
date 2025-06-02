@@ -75,9 +75,8 @@
     }
     .text-center {
       font-family: "Koulen", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-
+      font-weight: 400;
+      font-style: normal;
     }
     #closePopup {
       font-family: "Angkor", serif;
@@ -126,34 +125,6 @@
         </table>
       </div>
     </div>
-    <div class="row mt-4">
-        <div class="col-12">
-          <h3>🎁 បញ្ជីរង្វាន់ទាំងអស់</h3>
-          <table class="table table-bordered table-striped">
-            <thead>
-              <tr><th>#</th><th>Prize</th><th>Image</th></tr>
-            </thead>
-            <tbody>
-              <!-- Loop through each prize -->
-              <tr><td>1</td><td>ស្រោមទូរស័ព្ទគ្រប់សេរី ១</td><td><img src="https://djd1xqjx2kdnv.cloudfront.net/photos/36/45/486053_11037_XXL.jpg" width="80"/></td></tr>
-              <tr><td>2</td><td>ឆ្នាំងសាកហ្ស៊ីន</td><td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSlOZH98g7c4-YJG9fdxkTvnxb0qbHIcLjwQ&s" width="80"/></td></tr>
-              <tr><td>3</td><td>កាសហ្ស៊ីន</td><td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZd9OAIEltTu5RE3zMzk4rT95l30Jgb4mjq-myNCCXKhOycFc6qByrR5jozJfC3cDZhkU&usqp=CAU" width="80"/></td></tr>
-              <tr><td>4</td><td>Samsung S10 1គ្រឿង</td><td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROQ5FH3-NxAMdf7kZjn_mBVRvTkO9RfODvYw&s" width="80"/></td></tr>
-              <tr><td>5</td><td>iPad Air 2 16g</td><td><img src="https://i5.walmartimages.com/seo/Restored-2014-Apple-iPad-air-Wi-Fi-64-GB-Gold-2nd-Generation-Refurbished_4c90df39-16bc-4ef2-b183-463134147dd9.6862408139e3d57dca7824ce03fdc8e4.jpeg" width="80"/></td></tr>
-              <tr><td>6</td><td>iPhone 15 Pro Max</td><td><img src="https://cdn.dsmcdn.com/mnresize/1200/1800/ty1002/product/media/images/prod/PIM/20230921/07/9ad54364-69dd-45fc-9a54-562901b37704/1_org_zoom.jpg" width="80"/></td></tr>
-              <tr><td>7</td><td>Power Bank​ 10000 mah</td><td><img src="https://m.media-amazon.com/images/I/61BBj1YOHEL._AC_UF894,1000_QL80_.jpg" width="80"/></td></tr>
-              <tr><td>8</td><td>កាស​ Airpod 2</td><td><img src="https://khmersamnang.com/wp-content/uploads/2021/12/AirPods-with-Charging.jpg" width="80"/></td></tr>
-              <tr><td>9</td><td>Nokia 8110</td><td><img src="https://fdn2.gsmarena.com/vv/bigpic/nokia-8110-4g-.jpg" width="80"/></td></tr>
-              <tr><td>10</td><td>Discount 10%</td><td><img src="https://globalstudentnetwork.com/wp-content/uploads/2018/06/Discount.gif" width="80"/></td></tr>
-              <tr><td>11</td><td>Coupon 50$</td><td><img src="https://mekongquilts.com/images/2014/12/50-gift-voucher.jpg" width="80"/></td></tr>
-              <tr><td>12</td><td>ដបទឹក</td><td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR72DwgMa9OCPqTwDrqF5RVnYQXip27lCU2kw&s" width="80"/></td></tr>
-              <tr><td>13</td><td>អាវយឺត</td><td><img src="https://contents.mediadecathlon.com/p2157319/k$45a8143f29ae498e05be9c1588d95135/-breathable-.jpg?format=auto&quality=70&f=768x768" width="80"/></td></tr>
-              <tr><td>14</td><td>ទូរសព្ទ័ D52 1គ្រឿង</td><td><img src="https://m.media-amazon.com/images/I/61bZ6+F9vZL._AC_UF350,350_QL80_.jpg" width="80"/></td></tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-      
   </div>
 
   <div id="congratsPopup" class="text-center">
@@ -171,13 +142,7 @@
     const ctx = canvas.getContext('2d');
     const spinSound = document.getElementById("spinSound");
     const winSound = document.getElementById("winSound");
-    const spinButton = document.getElementById("spinButton");
-    const prizeTableBody = document.getElementById("prizeTableBody");
-    const prizeText = document.getElementById("prizeText");
-    const prizeImage = document.getElementById("prizeImage");
-    const congratsPopup = document.getElementById("congratsPopup");
-    const closePopup = document.getElementById("closePopup");
-  
+
     const segments = [
       { name: 'ស្រោមទូរស័ព្ទគ្រប់សេរី ១', img: 'https://djd1xqjx2kdnv.cloudfront.net/photos/36/45/486053_11037_XXL.jpg', prob: 7 },
       { name: 'ឆ្នាំងសាកហ្ស៊ីន', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSlOZH98g7c4-YJG9fdxkTvnxb0qbHIcLjwQ&s', prob: 5 },
@@ -194,9 +159,9 @@
       { name: 'អាវយឺត', img: 'https://contents.mediadecathlon.com/p2157319/k$45a8143f29ae498e05be9c1588d95135/-breathable-.jpg?format=auto&quality=70&f=768x768', prob: 30 },
       { name: 'ទូរសព្ទ័ D52 1គ្រឿង', img: 'https://m.media-amazon.com/images/I/61bZ6+F9vZL._AC_UF350,350_QL80_.jpg', prob: 7 },
     ];
-  
+
     const colors = ['#ffe9be', 'gold'];
-  
+
     function drawWheel(rotation = 0) {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
       const angle = (2 * Math.PI) / segments.length;
@@ -209,74 +174,92 @@
         ctx.fill();
         ctx.strokeStyle = "#000";
         ctx.stroke();
-  
+
         ctx.save();
         ctx.translate(250, 250);
         ctx.rotate(angle * (i + 0.5) + rotation);
         ctx.fillStyle = "#000";
-        ctx.font = "14px Arial";
-        ctx.textAlign = "right";
-        ctx.fillText(segments[i].name, 230, 0);
+        ctx.font = "bold 13px Arial";
+        ctx.textAlign = "center";
+        ctx.fillText(segments[i].name, 130, 0);
         ctx.restore();
       }
     }
-  
-    let currentRotation = 0;
-  
-    function weightedRandom() {
+
+    drawWheel();
+
+    function pickPrize() {
       const total = segments.reduce((acc, seg) => acc + seg.prob, 0);
-      let r = Math.random() * total;
-      for (let seg of segments) {
-        if (r < seg.prob) return seg;
-        r -= seg.prob;
+      const rand = Math.random() * total;
+      let sum = 0;
+      for (let i = 0; i < segments.length; i++) {
+        sum += segments[i].prob;
+        if (rand < sum) return i;
       }
-      return segments[0];
+      return segments.length - 1;
     }
-  
-    spinButton.addEventListener('click', () => {
-      spinSound.play();
-      const prize = weightedRandom();
-      const index = segments.indexOf(prize);
+
+    const spinButton = document.getElementById("spinButton");
+    const prizeTable = document.getElementById("prizeTableBody");
+
+    spinButton.addEventListener("click", () => {
+      let spinCount = parseInt(localStorage.getItem("spinCount") || "0");
+      if (spinCount >= 20) {
+        alert("អ្នកបានបង្វិលរួច 2 ដងហើយ។ អ្នកមិនអាចបង្វិលម្ដងទៀតបានទេ។");
+        return;
+      }
+
+      const index = pickPrize();
       const anglePerSegment = 360 / segments.length;
-      const stopAngle = 360 - (anglePerSegment * index + anglePerSegment / 2);
-  
-      const extraSpins = 5;
-      const finalRotation = (extraSpins * 360) + stopAngle;
-      currentRotation += finalRotation;
-  
-      canvas.style.transform = `rotate(${currentRotation}deg)`;
-  
+      const randomSpin = 360 * 5;
+      const finalAngle = randomSpin + (90 - index * anglePerSegment - anglePerSegment / 2);
+
+      spinSound.play();
+      canvas.style.transform = `rotate(${finalAngle}deg)`;
+
       setTimeout(() => {
         winSound.play();
-        prizeText.textContent = prize.name;
-        prizeImage.src = prize.img;
+        const prize = segments[index];
+        document.getElementById("prizeText").textContent = prize.name;
+        document.getElementById("prizeImage").src = prize.img;
+
+        const popup = document.getElementById("congratsPopup");
+        popup.style.display = "block";
+        popup.style.opacity = 1;
+
         const newRow = document.createElement("tr");
-        newRow.innerHTML = `
-          <td>${prizeTableBody.children.length + 1}</td>
-          <td>${prize.name}</td>
-          <td><img src="${prize.img}" width="50"></td>
-          <td>${new Date().toLocaleString()}</td>
-        `;
-        prizeTableBody.prepend(newRow);
-  
-        congratsPopup.style.display = 'block';
-        setTimeout(() => {
-          congratsPopup.style.opacity = 1;
-          congratsPopup.style.transform = 'translate(-50%, -50%) scale(1)';
-        }, 10);
-      }, 4000); // Match the CSS spin duration
+        newRow.innerHTML = `<td>${prizeTable.rows.length + 1}</td><td>${prize.name}</td><td><img src="${prize.img}" width="80"/></td><td>${new Date().toLocaleString()}</td>`;
+        prizeTable.appendChild(newRow);
+
+        // Update spin count
+        spinCount++;
+        localStorage.setItem("spinCount", spinCount);
+
+        if (spinCount >= 20) {
+          spinButton.disabled = true;
+          spinButton.textContent = "បានបង្វិល 2 ដងរួច";
+        } else {
+          spinButton.textContent = `បង្វិល`;
+        }
+      }, 4000);
     });
-  
-    closePopup.addEventListener('click', () => {
-      congratsPopup.style.opacity = 0;
-      congratsPopup.style.transform = 'translate(-50%, -50%) scale(0.8)';
-      setTimeout(() => {
-        congratsPopup.style.display = 'none';
-      }, 500);
+
+    document.getElementById("closePopup").addEventListener("click", () => {
+      const popup = document.getElementById("congratsPopup");
+      popup.style.opacity = 0;
+      setTimeout(() => popup.style.display = 'none', 500);
     });
-  
-    drawWheel();
+
+    // Initialize button state
+    window.onload = () => {
+      let spinCount = parseInt(localStorage.getItem("spinCount") || "0");
+      if (spinCount >= 20) {
+        spinButton.disabled = true;
+        spinButton.textContent = "បានបង្វិល 2 ដងរួច";
+      } else if (spinCount > 0) {
+        spinButton.textContent = `បង្វិល`;
+      }
+    };
   </script>
-  
 </body>
 </html>
