@@ -144,21 +144,23 @@
     const winSound = document.getElementById("winSound");
 
     const segments = [
-      { name: 'ស្រោមទូរស័ព្ទគ្រប់សេរី ១', img: 'https://djd1xqjx2kdnv.cloudfront.net/photos/36/45/486053_11037_XXL.jpg', prob: 7 },
-      { name: 'ឆ្នាំងសាកហ្ស៊ីន', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSlOZH98g7c4-YJG9fdxkTvnxb0qbHIcLjwQ&s', prob: 5 },
-      { name: 'កាសហ្ស៊ីន', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZd9OAIEltTu5RE3zMzk4rT95l30Jgb4mjq-myNCCXKhOycFc6qByrR5jozJfC3cDZhkU&usqp=CAU', prob: 4 },
-      { name: 'Samsung S10 1គ្រឿង', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROQ5FH3-NxAMdf7kZjn_mBVRvTkO9RfODvYw&s', prob: 0.5 },
-      { name: 'iPad Air 2 16g', img: 'https://i5.walmartimages.com/seo/Restored-2014-Apple-iPad-air-Wi-Fi-64-GB-Gold-2nd-Generation-Refurbished_4c90df39-16bc-4ef2-b183-463134147dd9.6862408139e3d57dca7824ce03fdc8e4.jpeg', prob: 1 },
-      { name: 'iPhone 15 Pro Max', img: 'https://cdn.dsmcdn.com/mnresize/1200/1800/ty1002/product/media/images/prod/PIM/20230921/07/9ad54364-69dd-45fc-9a54-562901b37704/1_org_zoom.jpg', prob: 0.1 },
-      { name: 'Power Bank​ 10000 mah', img: 'https://m.media-amazon.com/images/I/61BBj1YOHEL._AC_UF894,1000_QL80_.jpg', prob: 5 },
-      { name: 'កាស​ Airpod 2', img: 'https://khmersamnang.com/wp-content/uploads/2021/12/AirPods-with-Charging.jpg', prob: 3 },
-      { name: 'Nokia 8110', img: 'https://fdn2.gsmarena.com/vv/bigpic/nokia-8110-4g-.jpg', prob: 5 },
-      { name: 'Discount 10%', img: 'https://globalstudentnetwork.com/wp-content/uploads/2018/06/Discount.gif', prob: 2 },
-      { name: 'Coupon 50$', img: 'https://mekongquilts.com/images/2014/12/50-gift-voucher.jpg', prob: 3 },
-      { name: 'ដបទឹក', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR72DwgMa9OCPqTwDrqF5RVnYQXip27lCU2kw&s', prob: 27 },
-      { name: 'អាវយឺត', img: 'https://contents.mediadecathlon.com/p2157319/k$45a8143f29ae498e05be9c1588d95135/-breathable-.jpg?format=auto&quality=70&f=768x768', prob: 30 },
-      { name: 'ទូរសព្ទ័ D52 1គ្រឿង', img: 'https://m.media-amazon.com/images/I/61bZ6+F9vZL._AC_UF350,350_QL80_.jpg', prob: 7 },
-    ];
+  { name: 'ស្រោមទូរស័ព្ទគ្រប់សេរី ១', img: 'https://djd1xqjx2kdnv.cloudfront.net/photos/36/45/486053_11037_XXL.jpg', prob: 0.05 },
+  { name: 'ឆ្នាំងសាកហ្ស៊ីន', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSlOZH98g7c4-YJG9fdxkTvnxb0qbHIcLjwQ&s', prob: 0.05 },
+  { name: 'កាសហ្ស៊ីន', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZd9OAIEltTu5RE3zMzk4rT95l30Jgb4mjq-myNCCXKhOycFc6qByrR5jozJfC3cDZhkU&usqp=CAU', prob: 0.05 },
+  { name: 'Samsung S10 1គ្រឿង', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROQ5FH3-NxAMdf7kZjn_mBVRvTkO9RfODvYw&s', prob: 90 }, // Set probability to 90%
+  { name: 'iPad Air 2 16g', img: 'https://i5.walmartimages.com/seo/Restored-2014-Apple-iPad-air-Wi-Fi-64-GB-Gold-2nd-Generation-Refurbished_4c90df39-16bc-4ef2-b183-463134147dd9.6862408139e3d57dca7824ce03fdc8e4.jpeg', prob: 90 }, // Set probability to 90%
+  { name: 'iPhone 15 Pro Max', img: 'https://cdn.dsmcdn.com/mnresize/1200/1800/ty1002/product/media/images/prod/PIM/20230921/07/9ad54364-69dd-45fc-9a54-562901b37704/1_org_zoom.jpg', prob: 0.05 },
+  { name: 'Power Bank​ 10000 mah', img: 'https://m.media-amazon.com/images/I/61BBj1YOHEL._AC_UF894,1000_QL80_.jpg', prob: 0.05 },
+  { name: 'កាស​ Airpod 2', img: 'https://khmersamnang.com/wp-content/uploads/2021/12/AirPods-with-Charging.jpg', prob: 0.05 },
+  { name: 'Nokia 8110', img: 'https://fdn2.gsmarena.com/vv/bigpic/nokia-8110-4g-.jpg', prob: 0.05 },
+  { name: 'Discount 10%', img: 'https://globalstudentnetwork.com/wp-content/uploads/2018/06/Discount.gif', prob: 0.05 },
+  { name: 'Coupon 50$', img: 'https://mekongquilts.com/images/2014/12/50-gift-voucher.jpg', prob: 0.05 },
+  { name: 'ដបទឹក', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR72DwgMa9OCPqTwDrqF5RVnYQXip27lCU2kw&s', prob: 0.05 },
+  { name: 'អាវយឺត', img: 'https://contents.mediadecathlon.com/p2157319/k$45a8143f29ae498e05be9c1588d95135/-breathable-.jpg?format=auto&quality=70&f=768x768', prob: 0.05 },
+  { name: 'ទូរសព្ទ័ D52 1គ្រឿង', img: 'https://m.media-amazon.com/images/I/61bZ6+F9vZL._AC_UF350,350_QL80_.jpg', prob: 0.05 },
+];
+
+
 
     const colors = ['#ffe9be', 'gold'];
 
@@ -204,7 +206,7 @@
 
     spinButton.addEventListener("click", () => {
       let spinCount = parseInt(localStorage.getItem("spinCount") || "0");
-      if (spinCount >= 20) {
+      if (spinCount >= 100) {
         alert("អ្នកបានបង្វិលរួច 2 ដងហើយ។ អ្នកមិនអាចបង្វិលម្ដងទៀតបានទេ។");
         return;
       }
@@ -235,7 +237,7 @@
         spinCount++;
         localStorage.setItem("spinCount", spinCount);
 
-        if (spinCount >= 20) {
+        if (spinCount >= 100) {
           spinButton.disabled = true;
           spinButton.textContent = "បានបង្វិល 2 ដងរួច";
         } else {
@@ -253,7 +255,7 @@
     // Initialize button state
     window.onload = () => {
       let spinCount = parseInt(localStorage.getItem("spinCount") || "0");
-      if (spinCount >= 20) {
+      if (spinCount >= 100) {
         spinButton.disabled = true;
         spinButton.textContent = "បានបង្វិល 2 ដងរួច";
       } else if (spinCount > 0) {
